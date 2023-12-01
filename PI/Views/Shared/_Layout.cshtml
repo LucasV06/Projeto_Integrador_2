@@ -11,9 +11,9 @@
 </head>
 <body>
     <header>
-        <nav class="cor-nav navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 bg-primary">
+        <nav class="cor-nav navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-blue border-bottom box-shadow mb-3 bg-primary" style="background-color:dodgerblue">
             <div class="container-fluid">
-                <img src="https://i.ibb.co/vJvqqHY/logo-esporteclubeprogramador-removebg-preview.png" alt="logo" />
+                <img src="https://i.ibb.co/vJvqqHY/logo-esporteclubeprogramador-removebg-preview.png" alt="logo" class="logo"/>
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CLUBE ESPORTIVO PROGRAMADOR</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +52,56 @@
             @RenderBody()
         </main>
     </div>
+
+    <style>
+        .navbar-brand{
+            font-size:30px;
+        }
+        .logo{
+            width:100px;
+            height:100px;
+        }
+        .nav-item {
+            font-size: 20px;
+            display: flex;
+           @* background-size:100% auto;*@
+        }
+
+            .nav-item:active {
+                background-color: blue;
+                background: blue;
+                padding-right: 2px;
+                padding-left: 2px;
+                padding-bottom: 12px;
+                padding-top: 12px;
+            }
+
+            .nav-item:focus {
+                background-color: blue;
+                background: blue;
+                padding-right: 2px;
+                padding-left: 2px;
+                padding-bottom: 12px;
+                padding-top: 12px;
+            }
+
+            .nav-item:hover {
+                background-color: blue;
+                background: blue;
+    
+        @*
+                padding-right:2px;
+                padding-left:2px;
+                padding-bottom:12px;
+                padding-top:12px;
+                *@
+
+            }
+       div{}
+    
+
+    </style>
+
 
     @*    <footer class="border-top footer text-muted">
     <div class="container">
