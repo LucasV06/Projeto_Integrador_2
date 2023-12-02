@@ -3,23 +3,23 @@
 }
 <body>
     <h1>Contato</h1>
-
+    <h5 class="subtexto">Outros contatos</h5>
 
     <div class="col-10">
         <label for="Nome">Nome:</label>
     </div>
     <div class="col-75">
         <input name="Nome" type="text" maxlength="30" placeholder="Informe-nos o seu nome (campo obrigatório)" required />
-                <button class="" name="whatsapp" onclick="location.href='https://api.whatsapp.com/send/?phone=5547992426821&text&type=phone_number&app_absent=0'"><img class="Bwhatsapp" src="https://seeklogo.com/images/W/whatsapp-logo-8AE44BBBB0-seeklogo.com.png" /></button>
-        <a href="https://api.whatsapp.com/send/?phone=5547992426821&text&type=phone_number&app_absent=0">Whatsapp</a>
+                <button class="Bwhatsapp" name="whatsapp" onclick="location.href='https://api.whatsapp.com/send/?phone=5547988089000&text&type=phone_number&app_absent=0'"><img class="Whatsapp" src="https://seeklogo.com/images/W/whatsapp-logo-8AE44BBBB0-seeklogo.com.png" /></button>
+        <a class="Bwhatsapp" href="https://api.whatsapp.com/send/?phone=5547988089000&text&type=phone_number&app_absent=0">Whatsapp</a>
     </div>
     <div class="col-10">
         <label for="Email">Email:</label>
     </div>
     <div class="col-75">
         <input name="Email" class="Email" type="text" placeholder="(campo obrigatório)" />
-                <button class="BInstagram" name="instagram" onclick="location.href='https://www.instagram.com/lucas_visconti06/'"><img class="Instagram" src="https://img.freepik.com/vetores-premium/icone-do-aplicativo-instagram-logotipo-da-midia-social-ilustracao-em-vetor_277909-403.jpg" /></button>
-        <a class="BInstagram" href="https://www.instagram.com/lucas_visconti06/">Instagram</a>
+                <button class="BInstagram" name="instagram" onclick="location.href='https://www.instagram.com/senacbrusque/'"><img class="Instagram" src="https://img.freepik.com/vetores-premium/icone-do-aplicativo-instagram-logotipo-da-midia-social-ilustracao-em-vetor_277909-403.jpg" /></button>
+        <a class="BInstagram" href="https://www.instagram.com/senacbrusque/">Instagram</a>
     </div>
 
 
@@ -29,8 +29,8 @@
     <div class="col-75">
         <input name="Assunto" type="text" placeholder="(Assunto que deseja discutir)" required/>
             
-        <button class="" onclick="location.href='https://api.whatsapp.com/send/?phone=5547992426821&text&type=phone_number&app_absent=0'"><img class="Bemail" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" /></button>
-        <a href=“mailto:lucasvisconti06@gmail.com”>Email</a>
+        <button class="Bfacebook" onclick="location.href='https://www.facebook.com/SenacSC'"><img class="Facebook" src="https://logopng.com.br/logos/facebook-13.png" /></button>
+        <a class="Bfacebook" href=“https://www.facebook.com/SenacSC”>Facebook</a>
 
     </div>
     
@@ -40,14 +40,25 @@
     </div>
     <div class="col-75">
         <textarea id="obs" name="obs" rows="6" maxlength="1000" placeholder="Escreva sua mensagem..." required></textarea>
-           <input class="Enviar" type="submit" value="Enviar">
+          
+
+                   <button class="Bmaps" onclick="location.href='https://maps.app.goo.gl/chzou8mZsAcD6LZW7'"><img class="Maps" src="https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA" /></button>
+        <a class="Bmaps" href="https://maps.app.goo.gl/chzou8mZsAcD6LZW7">Maps</a>
+
+
     </div>
 
-        <div>
+        <div style="align-content:flex-end">
         <input class="Enviar" type="submit" value="Enviar">
-    </div>
+        </div>
+
 </body>
 <style>
+    .subtexto{
+        position:relative;
+        left:85%;
+    }
+
     .linhas:after {
         content: "";
         display: table;
@@ -144,10 +155,11 @@
     }
     
     .Enviar{
-        left:1px;
-        top:1px;
-        align-content:end;
-        float:right;
+        
+    position:relative;
+    left: 40%;
+    margin-top:14%;
+        
     }
 
     @*
@@ -158,11 +170,13 @@
     }
 
     .Bwhatsapp {
-        width: 30px;
-        height: 30px;
+     position:relative;
+     left:50px;
     }
 
-    .Lwhatsapp {
+    .Whatsapp {
+        width: 30px;
+        height: 30px;
     }
 
     .Instagram {
@@ -174,12 +188,29 @@
     }
 
     .BInstagram{
-             position:relative;
+     position:relative;
      top:10px;
-     left:20px;
+     left:55px;
     }
 
-    .Bemail {
+    .Bfacebook {
+     position:relative;
+     left:50px;
+    }
+
+    .Facebook{
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .Bmaps{
+     position:relative;
+     left:50px;
+     bottom:140px;
+    }
+
+    .Maps{
         width: 30px;
         height: 30px;
     }
