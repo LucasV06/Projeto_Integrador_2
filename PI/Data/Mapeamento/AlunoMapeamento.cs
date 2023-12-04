@@ -23,5 +23,26 @@ namespace PI.Data.Mapeamento
             builder.Property(t => t.Cep).HasColumnType("varchar(100)");
 
         }
+
+        /*
+         *         public void Configure(EntityTypeBuilder<Socio> builder)
+        {
+            builder.ToTable("Socio");
+
+            builder.HasKey(t => t.Id);
+
+            builder.Property(t => t.Nome).HasColumnType("varchar(100)");
+
+            builder.Property(t => t.Cep).HasColumnType("varchar(9)");
+
+            builder.Property(t => t.Idade).HasColumnType("int");
+
+            builder.Property(t => t.Matrícula).HasColumnType("varchar(100)");
+
+            builder.Property(t => t.Nota).HasColumnType("decimal");
+
+
+        }
+         */
     }
 }

@@ -48,9 +48,11 @@
 
     </div>
 
+   
+        
         <div style="align-content:flex-end">
-        <input class="Enviar" type="submit" value="Enviar">
-        </div>
+                    <a type="submit" class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Mensagem">Enviar</a>
+    </div>
 
 </body>
 <style>
@@ -154,6 +156,21 @@
         margin-top: 6px;
     }
     
+       .btn{
+        
+    position:relative;
+    left: 40%;
+    margin-top:14%;
+        padding: 15px 25px;
+        border: 1px solid#00ff21;
+        cursor: pointer;
+        background-color: forestgreen;
+        color: white;
+        border-radius: 5px;
+        
+    }
+
+
     .Enviar{
         
     position:relative;

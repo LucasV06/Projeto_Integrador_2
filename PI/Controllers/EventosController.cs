@@ -2,13 +2,13 @@
 
 namespace PI.Controllers
 {
-    public class ContatoController : Controller
+    public class EventosController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Mensagem()
+        public IActionResult Confirmacao()
         {
             return View();
         }

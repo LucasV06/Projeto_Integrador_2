@@ -1,0 +1,81 @@
+﻿﻿@{
+    ViewData["Title"] = "Eventos";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4"> PRÓXIMOS EVENTOS</h1>
+</div>
+
+<BR />
+<form>
+<div class="container">
+    <div class="lead">
+        I Torneio de Futebol Sócio & Amigos
+        <div class="imagem">
+            <img src="https://mrvnoesporte.com.br/wp-content/uploads/2017/04/77373-futebol-de-campo-6-tecnicas-para-um-atacante-entortar-o-marcador.jpg" style="width: 350px; height: 250px;">
+        </div>
+
+        <div class="fs-6">
+            Você que é sócio, junte seus amigos (mesmo que não sejam dependentes) e venha participar da nossa nova competição!
+        </div>
+            <div class="btn btn-outline-info" type="button">
+                <a type="submit" class="btn btn-primary" role="button" asp-controller="Eventos" asp-action="Confirmacao"> Participar</a>
+            </div>
+    </div>
+
+    <div class="lead">
+        I Torneio "O novo Baianinho de Mauá"
+        <div class="imagem">
+            <img src="https://www.infoescola.com/wp-content/uploads/2008/04/sinuca_1010470390.jpg" style="width: 350px; height: 250px;">
+        </div>
+        <div class="fs-6">
+            Sócios e dependentes, estão preparados para receber a coroa do maior jogador de sinuca do país? Participe!
+        </div>
+            <div class="btn btn-outline-info" type="button">
+                <a type="submit" class="btn btn-primary" role="button" asp-controller="Eventos" asp-action="Confirmacao"> Participar</a>
+            </div>
+    </div>
+
+    <div class="lead">
+        Queimada em família
+        <div class="imagem">
+            <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2020/12/03085208/Competicao-segue-com-jogos-de-queimada-e1562462812940-1280x720-1-1000x600.jpg" style="width: 350px; height: 250px;">
+        </div>
+
+        <div class="fs-6">
+            Sócio, reúna a sua família e participe do nosso evento que promete diversão. E em seguida, almoçaremos juntos!
+        </div>
+        <div class="btn btn-outline-info" type="button">
+            <a type="submit" class="btn btn-primary" role="button" asp-controller="Eventos" asp-action="Confirmacao"> Participar</a>
+            </div>
+    </div>
+
+    
+
+</div>
+</form>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lead {
+        flex: 0 0 auto;
+        width: calc(33.33% - 30px);
+        margin-right: 50px;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        flex: 0 0 auto;
+        margin-right: 100px;
+        width: 103%;
+        height: auto;
+    }
+</style>
