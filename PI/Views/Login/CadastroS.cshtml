@@ -1,8 +1,22 @@
-﻿
+﻿﻿@{
+    Layout = "_LayoutDeslogado";
+}
+
+<style>
+    #header {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+</style>
+
+<div id="header"></div>
 
 <h3 style="text-align:center"><u>Faça seu CADASTRO!</u></h3>
 
-<form class="row g-3">
+<div id="header"></div>
+
+<form class="row g-3" asp-action="Index">
     <div class="col-md-6">
         <label for="inputNome" class="form-label">Nome</label>
         <input type="text" class="form-control" id="inputNome">
