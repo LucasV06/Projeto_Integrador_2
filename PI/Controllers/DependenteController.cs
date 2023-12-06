@@ -4,6 +4,11 @@ namespace PI.Controllers
 {
     public class DependenteController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult CadastroD()
         {
             return View();
@@ -18,6 +23,7 @@ namespace PI.Controllers
         {
             return View();
         }
+
 
 
 
