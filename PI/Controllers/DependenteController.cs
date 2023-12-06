@@ -8,5 +8,11 @@ namespace PI.Controllers
         {
             return View();
         }
+
+        public IActionResult Exame()
+        {
+            return View();
+        }
+
     }
 }
