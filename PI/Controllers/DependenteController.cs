@@ -9,10 +9,17 @@ namespace PI.Controllers
             return View();
         }
 
-        public IActionResult Exame()
+        public IActionResult VerD()
         {
             return View();
         }
+
+        public IActionResult VerDExcluido()
+        {
+            return View();
+        }
+
+
 
     }
 }
